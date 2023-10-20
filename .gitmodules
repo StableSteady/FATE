@@ -1,0 +1,19 @@
+[submodule "assimp"]
+	path = assimp
+	url = https://github.com/assimp/assimp.git
+[submodule "glfw"]
+	path = glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "glm"]
+	path = glm
+	url = https://github.com/g-truc/glm.git
+[submodule "imgui"]
+	path = imgui
+	url = https://github.com/ocornut/imgui.git
+	branch = docking
+[submodule "json"]
+	path = json
+	url = https://github.com/nlohmann/json.git
+[submodule "stb"]
+	path = stb
+	url = https://github.com/nothings/stb.git
