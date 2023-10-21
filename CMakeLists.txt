@@ -67,13 +67,13 @@ add_custom_command(
         TARGET ${CMAKE_PROJECT_NAME}  POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy
                 ${CMAKE_SOURCE_DIR}/shaders/vertex.glsl
-                ${CMAKE_CURRENT_BINARY_DIR}/vertex.glsl)
+                $<TARGET_FILE_DIR:${CMAKE_PROJECT_NAME}>)
 
 add_custom_command(
         TARGET ${CMAKE_PROJECT_NAME}  POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy
                 ${CMAKE_SOURCE_DIR}/shaders/fragment.glsl
-                ${CMAKE_CURRENT_BINARY_DIR}/fragment.glsl)
+                $<TARGET_FILE_DIR:${CMAKE_PROJECT_NAME}>)
 
 add_library(imgui
 	imgui/imgui.cpp
