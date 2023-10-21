@@ -13,7 +13,8 @@ git clone --recursive https://github.com/StableSteady/FATE.git
 cd FATE
 mkdir build
 cd build
-cmake ..
+cmake -DASSIMP_BUILD_ALL_EXPORTERS_BY_DEFAULT=OFF -DASSIMP_BUILD_ALL_IMPORTERS_BY_DEFAULT=OFF -DASSIMP_BUILD_FBX_IMPORTER=ON -DASSIMP_BUILD_TESTS=OFF -DGLFW_BUILD_DOCS=OFF ..
+cmake --build . --config Release
 ```
 
 ## Usage Instructions
